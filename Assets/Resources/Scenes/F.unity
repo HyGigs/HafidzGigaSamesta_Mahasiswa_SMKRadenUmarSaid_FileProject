@@ -210,8 +210,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3660b595d86fdf64cb8f1b2353b75ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  squareType: 1
+  respawnOption: 0
+  respawnDelay: 3
   squarePrefab: {fileID: 5850782525836710530, guid: 7d5fa1a5259f51e47b3cfd7e5f124cac, type: 3}
   circle: {fileID: 670744858}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  spawnRadius: 0.3
   safeDistanceFromCircle: 1.5
   squareSpacing: 2
   minSquare: 5
@@ -364,7 +371,7 @@ GameObject:
   - component: {fileID: 529243868}
   - component: {fileID: 529243870}
   - component: {fileID: 529243869}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Line (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +505,7 @@ GameObject:
   - component: {fileID: 568252044}
   - component: {fileID: 568252046}
   - component: {fileID: 568252045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Line (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,7 +890,7 @@ GameObject:
   - component: {fileID: 670758860}
   - component: {fileID: 670758862}
   - component: {fileID: 670758861}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Line '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1096,7 +1103,7 @@ GameObject:
   - component: {fileID: 1424644445}
   - component: {fileID: 1424644447}
   - component: {fileID: 1424644446}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Line (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
