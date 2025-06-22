@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  movomentMode: 2
+  movomentMode: 0
 --- !u!1 &670758859
 GameObject:
   m_ObjectHideFlags: 0
