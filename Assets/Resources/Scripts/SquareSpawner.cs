@@ -16,16 +16,24 @@ public class SquareSpawner : MonoBehaviour
         CanRespawn
     }
 
+    [Header("Square Settings")]
     [SerializeField] private SquareType squareType = SquareType.Destroyable;
     [SerializeField] private RespawnOption respawnOption = RespawnOption.CanRespawn;
     [SerializeField] private float respawnDelay = 3f;
 
+    [Header("Spawn Prefab")]
     [SerializeField] private GameObject squarePrefab;
+
+    [Header("Scene References")]
     [SerializeField] private Transform circle;
     [SerializeField] private LayerMask wallLayer;
+
+    [Header("Spawn Area Settings")]
     [SerializeField] private float spawnRadius = 0.3f;
     [SerializeField] private float safeDistanceFromCircle = 1.5f;
     [SerializeField] private float squareSpacing = 0.6f;
+
+    [Header("Spawn Amount")]
     [SerializeField] private int minSquare = 5;
     [SerializeField] private int maxSquare = 15;
 
@@ -36,6 +44,7 @@ public class SquareSpawner : MonoBehaviour
     void Start()
     {
         ScoreManager.EnsureExists();
+        ScoreManager.Instance.ResetScore();
 
         area = GetComponent<BoxCollider2D>();
         if (area == null) return;
